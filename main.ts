@@ -2,7 +2,7 @@ function askName () {
     game.showLongText("What is your name?", DialogLayout.Top)
     playerName = game.askForString("What is your name?", 8)
     game.splash("My name is ", playerName)
-    game.showLongText("Hi " + playerName + "I have not seen you around here before", DialogLayout.Top)
+    game.showLongText("Hi " + playerName + ", I have not seen you around here before", DialogLayout.Top)
 }
 function askPermission () {
     game.showLongText("Let us get out of the snow. There's a town hall nearby", DialogLayout.Top)
@@ -19,7 +19,7 @@ function askAge () {
     game.showLongText("How old are you?", DialogLayout.Bottom)
     age = game.askForNumber("What is your age?", 2)
     if (age < 12) {
-        game.showLongText("You are" + age + "? That is younger than me!", DialogLayout.Top)
+        game.showLongText("You are " + age + "? That is younger than me!", DialogLayout.Top)
     } else if (age == 16) {
         game.showLongText("" + age + "? You are of the same age as my annoying older brother", DialogLayout.Top)
     } else {

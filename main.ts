@@ -172,6 +172,6 @@ let mySprite = sprites.create(img`
     `, SpriteKind.Player)
 mySprite.setPosition(35, 90)
 game.showLongText("Hello! I'm Trinity and I found you sleeping here.", DialogLayout.Top)
+askPermission()
 askName()
 askAge()
-askPermission()

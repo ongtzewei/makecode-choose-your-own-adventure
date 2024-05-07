@@ -16,14 +16,16 @@ function askPermission () {
     }
 }
 function askAge () {
-    game.showLongText("How old are you?", DialogLayout.Bottom)
+    game.showLongText("How old are you?", DialogLayout.Top)
     age = game.askForNumber("What is your age?", 2)
-    if (age < 12) {
-        game.showLongText("You are " + age + "? That is younger than me!", DialogLayout.Top)
-    } else if (age == 16) {
-        game.showLongText("" + age + "? You are of the same age as my annoying older brother", DialogLayout.Top)
+    if (age == 8) {
+        game.showLongText("You are " + age + "? That is the same age as my annoying younger brother", DialogLayout.Top)
+    } else if (age == 12) {
+        game.showLongText("You are the same age as me!", DialogLayout.Top)
+    } else if (age < 12) {
+        game.showLongText("You are " + age + "? \\nYou should listen to what I say since you are younger than me.", DialogLayout.Top)
     } else {
-        game.showLongText("What? You are " + age + "? That is really old...", DialogLayout.Top)
+        game.showLongText("What? You are " + age + "? You are so old...", DialogLayout.Top)
     }
 }
 let age = 0
